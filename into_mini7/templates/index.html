@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% load static  %}
+
+{% block content %}
+<div class="bg-gray-100">
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-96 flex items-center justify-center" style="background-image: url('{% static 'images/bannerr.avif' %}');">
+    <div class="text-center text-[#A3005A]">
+        <h1 class="text-4xl font-bold">A LITERAL WARMTH OF LOVE</h1>
+        <p class="text-lg mt-4">Love, Creativity and Dedication</p>
+        <a href="/shop"
+           class="mt-6 inline-block bg-[#A3005A] text-white px-6 py-3 rounded hover:bg-[#FFBAD8] transition">SHOP
+            NOW</a>
+    </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+
+            <div class="flex items-center justify-center text-center">
+                <hr class="flex-1 border-t border-[#A3005A]">
+                <h2 class="text-3xl font-bold text-[#A3005A] mx-4">Shop by Categories ≧◡≦</h2>
+                <hr class="flex-1 border-t border-[#A3005A]">
+            </div>
+
+
+            <div class="my-4  grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Example Category -->
+                <div class="bg-white rounded-lg shadow p-4 text-center">
+                    <img src="{% static 'images/CrochetTulip.jpg' %}" alt="Bouquet"
+                         class="h-32 w-full object-cover rounded-t">
+                    <h3 class="mt-4 text-lg font-semibold">Bouquet ❀</h3>
+                    <a href="/category/bouquet" class="text-[#A3005A] hover:text-[#F8B7CD]  mt-2 block">View</a>
+                </div>
+                <div class="bg-white rounded-lg shadow p-4 text-center">
+                    <img src="{% static 'images/Keychain.jpg' %}" alt="Keychain"
+                         class="h-32 w-full object-cover rounded-t">
+                    <h3 class="mt-4 text-lg font-semibold">Keychain</h3>
+                    <a href="/category/keychain" class="text-[#A3005A] hover:text-[#F8B7CD]  mt-2 block">View</a>
+                </div>
+                <div class="bg-white rounded-lg shadow p-4 text-center">
+                    <img src="{% static 'images/FlowerPot.jpg' %}" alt="FlowerPot"
+                         class="h-32 w-full object-cover rounded-t">
+                    <h3 class="mt-4 text-lg font-semibold">Flower Pot</h3>
+                    <a href="/category/flower pot" class="text-[#A3005A] hover:text-[#F8B7CD]  mt-2 block">View</a>
+                </div>
+                <div class="bg-white rounded-lg shadow p-4 text-center">
+                    <img src="{% static 'images/Muffler.jpg' %}" alt="Muffler"
+                         class="h-32 w-full object-cover rounded-t">
+                    <h3 class="mt-4 text-lg font-semibold">Muffler</h3>
+                    <a href="/category/muffler" class="text-[#A3005A] hover:text-[#F8B7CD] mt-2 block">View</a>
+                </div>
+                <!-- Add more categories here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-0 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8p lg:px-8">
+            <div class="flex items-center justify-center text-center">
+  <hr class="flex-1 border-t border-[#A3005A]">
+  <h2 class="text-3xl font-bold text-[#A3005A] mx-4">Most Selling Products</h2>
+  <hr class="flex-1 border-t border-[#A3005A]">
+</div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Example Product -->
+                <div class="bg-white rounded-lg shadow p-4">
+                    <img src="{% static 'images/tulipx.jpg' %}" alt="Product Name"
+                         class="h-48 w-full object-cover rounded-t">
+                    <h3 class="mt-4 text-lg font-semibold">Tulip X Lavender Bouquet</h3>
+                    <p class="text-gray-600 mt-2">Rs.2300/-</p>
+                    <a href="/product/1"
+                       class="mt-4 inline-block bg-[#A3005A] text-white px-4 py-2 rounded hover:bg-[#F8B7CD] transition">Add
+                        to Cart</a>
+                </div>
+                <!-- Add more products here -->
+                <div class="bg-white rounded-lg shadow p-4">
+                    <img src="{% static 'images/WhiteMuffler.jpg' %}" alt="Product Name"
+                         class="h-48 w-full object-cover rounded-t">
+                    <h3 class="mt-4 text-lg font-semibold">White Muffler</h3>
+                    <p class="text-gray-600 mt-2">Rs.1900/-</p>
+                    <a href="/product/2"
+                       class="mt-4 inline-block bg-[#A3005A] text-white px-4 py-2 rounded hover:bg-[#F8B7CD] transition">Add
+                        to Cart</a>
+                </div>
+                <div class="bg-white rounded-lg shadow p-4">
+                    <img src="{% static 'images/sunflower.jpeg' %}" alt="Product Name"
+                         class="h-48 w-full object-cover rounded-t">
+                    <h3 class="mt-4 text-lg font-semibold">Sunflower Pot</h3>
+                    <p class="text-gray-600 mt-2">Rs.300/-</p>
+                    <a href="/product/3"
+                       class="mt-4 inline-block bg-[#A3005A] text-white px-4 py-2 rounded hover:bg-[#F8B7CD] transition">Add
+                        to Cart</a>
+                </div>
+                <div class="bg-white rounded-lg shadow p-4">
+                    <img src="{% static 'images/warmer.jpeg' %}" alt="Product Name"
+                         class="h-48 w-full object-cover rounded-t">
+                    <h3 class="mt-4 text-lg font-semibold">Hand Warmer</h3>
+                    <p class="text-gray-600 mt-2">Rs.400/-</p>
+                    <a href="/product/4"
+                       class="mt-4 inline-block bg-[#A3005A] text-white px-4 py-2 rounded hover:bg-[#F8B7CD] transition">Add
+                        to Cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+{% endblock %}
